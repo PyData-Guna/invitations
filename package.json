@@ -5,7 +5,7 @@
   "private": "true",
   "scripts": {
     "start": "node server.js",
-    "deploy": "./deploy.sh",
+    "deploy": "cross-env ./deploy.sh",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
