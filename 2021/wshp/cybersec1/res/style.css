@@ -1,0 +1,85 @@
+*, *::before, *::after {
+	font-family: 'Open Sans';
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+body {
+	min-height: 100vh;
+	background-image: url('poster.png');
+	background-size: cover;
+	background-attachment: fixed;
+	backdrop-filter: blur(13px) brightness(78%);
+}
+
+h1 {
+	background-color: yellow;
+	padding: 9px;
+	color: black;
+	border-radius: 0.2em;
+	font-weight: bold;
+}
+
+h2 {
+	background-color: rgb(150, 16, 240);
+	padding: 5px;
+	border-radius: 0.2em;
+	font-weight: 700;
+	width: 95%;
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+#name {
+	border-radius: 0.2em;
+	font-style: italic;
+	padding: 5px;
+	font-size: 20px;
+	display: inline-block;
+}
+
+#name a {
+	color: inherit;
+}
+
+#poster {
+	border-radius: 1em;
+	border: 4px solid rgba(171, 255, 189, 0.3);
+}
+
+.sparkle {
+	display: block;
+	position: absolute;
+	left: 50%;
+	transform: translateX(-50%);
+	filter: brightness(800%);
+	opacity: 0.5;
+	z-index: -40;
+}
+
+.section {
+	border-radius: 1em;
+	background-color: rgba(255, 255, 255, 0.2);
+	margin: 1em;
+	padding-top: 1em;
+	padding-bottom: 1em;
+}
+
+.btn-fluent {
+	border: 2px solid rgba(255, 255, 255, 0.4);
+	background-color: rgb(196, 0, 0);
+	transition: all 0.1s;
+	color: white;
+}
+
+.btn-fluent:hover {
+	filter: brightness(130%);
+	transform: scaleX(106%);
+	color: inherit;
+}
+
+.footer {
+	opacity: 0.8;
+}
