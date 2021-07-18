@@ -30,7 +30,6 @@
     "express": "^4.17.1",
     "livereload": "^0.9.3",
     "morgan": "^1.10.0",
-    "reload": "^3.2.0",
     "serve-index": "^1.9.1"
   },
   "dependencies": {
