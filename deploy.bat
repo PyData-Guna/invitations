@@ -4,7 +4,7 @@ setlocal enabledelayedexpansion
 
 ::Install all production modules
 echo Installing all production modules...
-npm ci --only=production
+call npm ci --only=production
 
 ::Create .nojekyll
 echo Ensuring .nojekyll...
@@ -32,7 +32,7 @@ git reset --hard HEAD~                           || goto :error
 
 ::Resetting dependencies
 echo Resetting dependencies...
-npm ci                                           || goto :error
+call npm ci                                           || goto :error
 
 endlocal
 
