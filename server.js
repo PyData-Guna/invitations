@@ -1,3 +1,4 @@
+const path = require('path');
 const express = require('express');
 const live = require('livereload');
 const connect = require('connect-livereload');
@@ -23,6 +24,8 @@ app.use(connect());
 app.use(logger('dev'));
 
 app.use('/invitations', express.static(__dirname), serveIndex(__dirname, { icons: true }));
+
+app.get('/favicon.ico', (req, res) => res.sendFile(path.join(__dirname, 'favicon.ico')));
 
 app.all('/*', (req, res) => res.type('html').send(`
 Invalid page.<br>
