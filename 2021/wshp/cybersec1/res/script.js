@@ -8,3 +8,12 @@ cybersecurity, how to break into systems, how to design
 systems that can't be broken into, et cetera.
 
 Go ahead and register!`);
+
+$(() => {
+	$('#shareBtn').on('click', () => {
+		navigator.share && navigator.share({
+			title: 'Introduction to Cybersecurity Workshop by Param',
+			url: window.location.href
+		});
+	});
+});

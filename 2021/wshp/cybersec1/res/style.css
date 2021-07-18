@@ -1,8 +1,11 @@
 *, *::before, *::after {
-	font-family: 'Open Sans';
 	margin: 0;
 	padding: 0;
 	box-sizing: border-box;
+}
+
+* {
+	font-family: 'Open Sans';
 }
 
 body {
@@ -67,8 +70,15 @@ h2 {
 	padding-bottom: 1em;
 }
 
-.btn-fluent {
+.btn, .btn:hover {
 	border: 2px solid rgba(255, 255, 255, 0.4);
+}
+
+.btn:hover {
+	transform: scaleX(106%);
+}
+
+.btn-fluent {
 	background-color: rgb(196, 0, 0);
 	transition: all 0.1s;
 	color: white;
@@ -76,7 +86,6 @@ h2 {
 
 .btn-fluent:hover {
 	filter: brightness(130%);
-	transform: scaleX(106%);
 	color: inherit;
 }
 
